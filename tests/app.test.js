@@ -1,7 +1,11 @@
-const { add, multiply } = require('../app');
+const { add, subtract multiply } = require('../app');
 
 test('adds two numbers', () => {
     expect(add(2, 3)).toBe(5);
+});
+
+test('subtracts two numbers', () => {
+    expect(subtract(10, 4)).toBe(6);
 });
 
 test('multiplies two numbers', () => {
